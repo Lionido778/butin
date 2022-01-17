@@ -4,6 +4,7 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import router from './router'
 import store from "./store";
+import './icons' //引入第三方图标
 
 
 Vue.use(ElementUI);

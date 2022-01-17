@@ -7,7 +7,7 @@
       <div class="box">
         <h3 v-show="!isCollapse">Butin后台管理系统</h3>
         <h3 v-show="isCollapse">Butin</h3>
-        <el-divider></el-divider>
+        <el-divider class="divider"></el-divider>
         <!-- 展开显示 avatar -->
         <div v-show="!isCollapse" class="avatar">
           <el-avatar :size="60" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
@@ -20,7 +20,7 @@
         <div v-show="isCollapse" class="avatar-isCollapse">
           <el-avatar :size="50" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
         </div>
-        <el-divider></el-divider>
+        <el-divider class="divider"></el-divider>
       </div>
       <!--一级菜单-->
       <el-menu-item :index="item.path" v-for="item in noChildren" :key="item.path" @click="clickMenu(item)">
@@ -206,8 +206,8 @@ export default {
   text-align: center;
 }
 
-.el-divider {
-  margin: 0px;
+.divider {
+  margin: 0;
 }
 
 .box h3 {
@@ -235,7 +235,7 @@ export default {
   padding: 5px 8px 8px;
 }
 
-.desc{
+.desc {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -243,11 +243,13 @@ export default {
   width: 100px;
   font-size: 14px;
 }
-.desc:before{
+
+.desc:before {
   display: inline-block;
 
 }
-.desc p{
+
+.desc p {
   margin: 3px 6px;
 }
 

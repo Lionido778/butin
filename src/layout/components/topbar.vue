@@ -20,11 +20,12 @@ export default {
 
 <style scoped>
 /* 写样式的时候必须定义好顶级父级元素的 属性包括高度、溢出隐藏、定位 */
-.topbar{
+.topbar {
   height: 60px;
   overflow: hidden;
   position: relative;
 }
+
 .breadcrumb {
   float: left;
   cursor: pointer;
